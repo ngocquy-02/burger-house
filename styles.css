@@ -105,7 +105,7 @@ header .header .active {
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 header .logo img {
-  width: 263px;
+  width: 100%;
   height: auto;
 }
 @media (max-width: 768px) {
@@ -332,9 +332,16 @@ header .background-img img {
   padding: 40px 0;
 }
 .food-img .food-img-bg {
+  width: 100%;
   position: relative;
   padding: 20px;
   box-shadow: 15px 15px 15px 6px #ccc;
+}
+@media (max-width: 575px) {
+  .food-img .food-img-bg {
+    box-shadow: none;
+    margin: 0;
+  }
 }
 .food-img h4 {
   margin-top: 20px;
@@ -358,6 +365,11 @@ header .background-img img {
   position: absolute;
   bottom: 5%;
   left: 60px;
+}
+@media (max-width: 768px) {
+  .food-img .food-img-position {
+    display: none;
+  }
 }
 .food-img .food-img-position div {
   width: 14px;
@@ -388,6 +400,10 @@ header .background-img img {
   .contact-us h1 {
     font-size: 36px;
   }
+}
+.contact-us .contact-us-input {
+  margin-left: 0;
+  margin-right: 0;
 }
 .contact-us .contact-us-input div {
   padding: 10px;
@@ -453,4 +469,22 @@ footer .footer .social-network {
 footer .footer .social-network img {
   width: 20px;
   margin-left: 5px;
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 1000;
+  font-size: 35px;
+  background: rgba(207, 207, 56, 0.1);
+  color: #3d2514;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1px 12px;
+  display: none;
+}
+.scroll-top:hover {
+  background: rgba(203, 203, 62, 0.678);
+  color: #bf2222;
 }/*# sourceMappingURL=styles.css.map */

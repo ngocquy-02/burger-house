@@ -16,13 +16,13 @@
 </head>
 <body>
     
-    <header style="background-image: url(./img/background.png);">
+    <header id="home" style="background-image: url(./img/background.png);">
         <div class="container">
             <div class="row">
-                <div class="col-6 logo">
-                    <img src="./img/logo.png">
+                <div class="col-sm-6 logo">
+                    <a href="#home"><img src="./img/logo.png"></a>
                 </div>
-                <div class="col-6 ship-logo">
+                <div class="col-sm-6 ship-logo">
                     <img src="./img/ship-logo.png">
                     <p>Express Delivery +1 234 567 890</p>
                 </div>
@@ -34,8 +34,8 @@
             <nav>
             <a href="#home">home</a>
             <a href="#menu">menu</a>
-            <a href="#order">our story</a>
-            <a href="#blogs">contact us</a>
+            <a href="#ourstory">our story</a>
+            <a href="#contactus">contact us</a>
             </nav>
         
             <div id="menu-btn" class="fas fa-bars"></div>
@@ -59,7 +59,7 @@
     </header>
 
     <div class="menu container">
-        <div class="row ">
+        <div class="row m-0">
             <div class="col-md-6">
                 <div class="menu-position">
                     <img src="./img/Burger-Image1.png" >
@@ -89,11 +89,11 @@
         </div>
     </div>
 
-    <div class="order container">
+    <div id="menu" class="order container">
         <p><span class="slogan">always taste burger</span></p>
         <h1>choose & enjoy</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-        <div class="row gx-3 order-burger">
+        <div class="row gx-3 order-burger m-0">
             <div class="col-md-4">
                 <img src="./img/Burger-menu1.png" >
                 <h3>lorem ipsum dolor</h3>
@@ -115,7 +115,7 @@
         </div>
     </div>
 
-    <div class="container food-img">
+    <div id="ourstory" class="container food-img">
         <div class="row food-img-bg">
             <div class="col-md-6 py-3 px-5">
                 <h4>Discover</h4>
@@ -134,7 +134,7 @@
         </div>
     </div>
 
-    <div class="contact-us container">
+    <div id="contactus" class="contact-us container">
         <p>reservation</p>
         <h1>Book your table</h1>
         <div class="row contact-us-input">
@@ -192,7 +192,7 @@
         
     </footer>
 
-
+    <a href="#home" class="scroll-top "><i class="fa-solid fa-angle-up"></i></a>
 
     <script src="./script.js"></script>
 

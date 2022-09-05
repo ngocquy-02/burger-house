@@ -141,7 +141,7 @@ header {
 		}	
 	}
 	.logo img {
-		width: 263px;
+		width: 100%;
 		height: auto;
 		@include md-max() {
 			width: 200px;
@@ -332,9 +332,14 @@ header {
 	width: 100%;
 	padding: 40px 0;
 	.food-img-bg {
+		width: 100%;
 		position: relative;
 		padding: 20px;
 		box-shadow: 15px 15px 15px 6px #ccc;
+		@include xs() {
+			box-shadow: none;
+			margin: 0;
+		}
 	}
 
 	h4 {
@@ -359,6 +364,9 @@ header {
 		position: absolute;
 		bottom: 5%;
     	left: 60px;
+		@include md-max() {
+			display: none;
+		}
 		div {
 			width: 14px;
 			height: 14px;
@@ -389,6 +397,8 @@ header {
 		}
 	}
 	.contact-us-input {
+		margin-left: 0;
+		margin-right: 0;
 		div {
 			padding: 10px;
 			text-align: center;
@@ -451,5 +461,22 @@ footer {
 		}
 	}
 
+}
+
+.scroll-top{
+	position: fixed;
+	bottom: 15px; right:15px;
+	z-index: 1000;
+	font-size: 35px;
+	background:rgba(207, 207, 56, 0.1);
+	color: $text-color;
+	border-radius: .5rem;
+	border:1px solid rgba(0,0,0,.1);
+	padding:1px 12px;
+	display: none;
+	&:hover {
+	background: rgba(203, 203, 62, 0.678);
+	color: $btn-color;
+	}
 }
 
